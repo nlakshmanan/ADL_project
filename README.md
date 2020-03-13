@@ -18,9 +18,7 @@ Output is tensorboard that shows the training in progress.
 
 ## Deliverables:
 (1)Run SURREAL without MuJoCo, embed SURREAL with an alternative simulator
-
 (2)Docker image 
-
 (3)Docker File
 
 ## Launch an Experiment
