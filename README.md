@@ -22,6 +22,46 @@ Output is tensorboard that shows the training in progress.
 ## Launch an Experiment
 
 ### Option1: Run from code
+Step 1: Git clone the repository
+```
+git clone https://github.com/nlakshmanan/ADL_project.git
+``` 
+Step 2: Create a virtual environment
+```
+mkdir venv
+cd venv
+Python3 -m venv ../
+source ./bin/activate
+```
+Step 3: Go to the directory where you cloned
+```
+cd /Users/Admin/Desktop/ADL_project
+```
+
+Step 4: Install requirements and execute Setup Files
+```
+pip install -r surreal_backup/requirements.txt
+python3 surreal_backup/setup.py install
+cd pybullet-gym
+pip install -e .
+```
+Step 5: Install pytorch
+```
+pip install torch torchvision
+```
+Step 6: Create YML File
+```
+surreal-default-config
+```
+Step 7: Edit 'username' and 'subproc_results_folder' in YML File
+```
+vi ~/.surreal.yml
+```
+Step 8: Launch training
+```
+cd ADL_project/surreal/surreal/subproc
+python3 surreal_subproc.py -al ppo --env gym:HalfCheetahPyBulletEnv-v0 exp1
+```
 
 ### Option2: Run from docker
 
