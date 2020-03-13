@@ -31,9 +31,7 @@ Prequisites: [Install docker](https://docs.docker.com/install/)
 Step 1: Git clone the repository
 ```
 git clone https://github.com/nlakshmanan/ADL_project.git
-```
-
-
+``` 
 Step 2:  Go to the directory where you cloned
 ```
 cd /Users/Admin/Desktop/ADL_project
