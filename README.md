@@ -21,7 +21,7 @@ Output is tensorboard that shows the training in progress.
 
 ## Launch an Experiment
 
-### Option1: Run from code (preffered)
+### Option1: Run from code
 
 ### Option2: Run from docker
 
