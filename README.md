@@ -76,14 +76,25 @@ Step 2:  Go to the directory where you cloned
 ```
 cd /Users/Admin/Desktop/ADL_project
 ```
-
 Step 3: Build docker image
 This commands take a long time to complete. Please wait until it completes.
 ```
 docker build -t surreal-pybullet .
 ```
-
 Step 4: Run docker image 
 ```
 docker run -it surreal-pybullet bash
 ```
+Step 5: Install dependencies
+```
+python3 -m pip install -r ./surreal/requirements.txt
+python3 -m pip install torch
+python3 -m pip install https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow_cpu-2.1.0-cp37-cp37m-manylinux2010_x86_64.whl
+python3 ./surreal/surreal/setup.py install 
+python3 ./pybullet-gym/setup.py install 
+```
+Step 5: Launch training
+```
+python3 ./surreal/surreal/subproc/surreal_subproc.py -al ppo --env gym:HalfCheetahPyBulletEnv-v0 exp1
+```
+
