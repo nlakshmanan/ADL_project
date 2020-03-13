@@ -80,10 +80,10 @@ cd /Users/Admin/Desktop/ADL_project
 Step 3: Build docker image
 This commands take a long time to complete. Please wait until it completes.
 ```
-docker build -t surreal-Pybullet .
+docker build -t surreal-pybullet .
 ```
 
 Step 4: Run docker image 
 ```
-docker run -it surreal-Pybullet bash
+docker run -it surreal-pybullet bash
 ```
