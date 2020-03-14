@@ -22,7 +22,7 @@ Output is tensorboard running at http://localhost:6006/  that shows training sta
 (2)Docker image <br />
 (3)Docker File
 
-## Launch an Experiment
+## Run Surreal with PyBullet-Gym
 
 ### Option1: Run from code
 Step 1: Git clone the repository
