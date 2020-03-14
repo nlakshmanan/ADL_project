@@ -55,9 +55,10 @@ cd /Users/Admin/Desktop/ADL_project
 
 Step 4: Install requirements and execute Setup Files
 ```
-pip install -r surreal/requirements.txt
-python3 surreal/setup.py install
-cd pybullet-gym
+cd ./surreal
+pip install -r requirements.txt
+python3 setup.py install
+cd ../pybullet-gym
 pip install -e .
 ```
 Step 5: Install pytorch
@@ -89,15 +90,18 @@ docker run -it surreal-pybullet bash
 ```
 Step 3: Install dependencies
 ```
-python3 -m pip install -r ./surreal/requirements.txt
+cd ./surreal
+python3 -m pip install -r requirements.txt
 python3 -m pip install torch
 python3 -m pip install https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow_cpu-2.1.0-cp37-cp37m-manylinux2010_x86_64.whl
-python3 ./surreal/surreal/setup.py install 
-python3 ./pybullet-gym/setup.py install 
+python3 setup.py install
+cd ../pybullet-gym
+python3 setup.py install 
 ```
 Step 4: Launch training
 ```
-python3 ./surreal/surreal/subproc/surreal_subproc.py -al ppo --env gym:HalfCheetahPyBulletEnv-v0 exp1
+cd ../surreal/surreal/subproc
+python3 surreal_subproc.py -al ppo --env gym:HalfCheetahPyBulletEnv-v0 exp1
 ```
 
 ## Building Image from Docker File
