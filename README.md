@@ -55,8 +55,8 @@ cd /Users/Admin/Desktop/ADL_project
 
 Step 4: Install requirements and execute Setup Files
 ```
-pip install -r surreal_backup/requirements.txt
-python3 surreal_backup/setup.py install
+pip install -r surreal/requirements.txt
+python3 surreal/setup.py install
 cd pybullet-gym
 pip install -e .
 ```
