@@ -15,7 +15,7 @@ Input is RL algorithm and environment that the user wants to train on.
 Output is tensorboard that shows the training in progress.
 
 ## Deliverables:
-(1)Run SURREAL without MuJoCo, embed SURREAL with an alternative simulator <br />
+(1)Run SURREAL without MuJoCo by providing SURREAL with pybullet-gym support <br />
 (2)Docker image <br />
 (3)Docker File
 
