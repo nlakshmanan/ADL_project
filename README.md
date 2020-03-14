@@ -36,7 +36,7 @@ cd venv
 python3 -m venv ../
 source ./bin/activate
 ```
-Step 3: Go to the directory where you cloned
+Step 3: Go to the local cloned directory 
 ```
 cd /Users/Admin/Desktop/ADL_project
 ```
@@ -95,7 +95,7 @@ Step 1: Git clone the repository
 ```
 git clone https://github.com/nlakshmanan/ADL_project.git
 ``` 
-Step 2:  Go to the directory where you cloned
+Step 2:  Go to the local cloned directory 
 ```
 cd /Users/Admin/Desktop/ADL_project
 ```
