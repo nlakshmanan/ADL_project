@@ -71,7 +71,7 @@ class SubprocSurrealParser:
             '-na',
             '--num_agents',
             type=int,
-            default=2,
+            default=1,
             help='number of agent pods to run in parallel.'
         )
         parser.add_argument(
@@ -145,6 +145,7 @@ class SubprocSurrealParser:
             'ps',
             cmd=cmd_gen.get_command('ps'))
 
+
         tensorboard = exp.new_process(
             'tensorboard',
             cmd=cmd_gen.get_command('tensorboard'))
@@ -177,10 +178,11 @@ class SubprocSurrealParser:
                       evals=evals,
                       learner=learner,
                       replay=replay,
-                      ps=ps,
+                      ps=ps ,
                       tensorboard=tensorboard,
                       tensorplex=tensorplex,
-                      loggerplex=loggerplex)
+                      loggerplex=loggerplex
+                      )
         self._setup_gpu(agents=agents,
                         evals=evals,
                         learner=learner,

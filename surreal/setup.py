@@ -33,8 +33,8 @@ setup(
     },
     install_requires=[
         "gym",
-#        "robosuite",
-#        "mujoco-py<1.50.2,>=1.50.1",
+        #"robosuite",
+        #"mujoco-py<1.50.2,>=1.50.1",
         "tabulate",
         "tensorflow",
         "tensorboardX",

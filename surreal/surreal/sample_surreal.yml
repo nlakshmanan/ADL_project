@@ -1,7 +1,7 @@
 # this file should be saved at ~/.surreal.yml or SURREAL_CONFIG_PATH
 
 # Give yourself a name. Experiments are automatically prepended with your name
-username: student
+username: <your_username>
 # Optionally, you can turn this behavior off by setting prefix_experiment_with_username = False
 prefix_experiment_with_username: True
 
@@ -10,9 +10,9 @@ tmux_preamble_cmds:
   - 'source activate surreal'
   # - ...
 # Every time an experiment is created on tmux, result data will be written here
-tmux_results_folder:  /root/surreal-tmux/
+tmux_results_folder: <put path here> # ~/surreal-tmux/
 
-subproc_results_folder: /root/surreal-subproc/
+subproc_results_folder: <put path here> # ~/surreal-subproc/
 
 
 ## !!! Stop here if you are only running things locally !!!

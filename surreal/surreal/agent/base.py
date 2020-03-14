@@ -266,7 +266,7 @@ class Agent(object, metaclass=U.AutoInitializeMeta):
             return
 
         if self.current_episode % 20 == 0:
-            self.log.info('Episode {} reward {}'
+            self.log.info('Episode blah2 {} reward {}'
                           .format(self.current_episode,
                                   total_reward))
 
