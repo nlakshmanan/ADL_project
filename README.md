@@ -11,8 +11,11 @@ SURREAL provides flexibility to choose environment and supports two environment 
 Both these environment suites use [MuJoCo](http://www.mujoco.org/) as its physics engine which requires a paid licence. This project incorporates a new environment suite [pybullet-gym](https://github.com/benelot/pybullet-gym) which is an open source implementation of OpenAI Gym MuJoCo environment. 
 
 ### Input and Output
-Input is RL algorithm and environment that the user wants to train on.
-Output is tensorboard that shows the training in progress.
+Input is an command with environment and algorithm. <br/>
+Example: surreal_subproc.py -al ppo --env gym:HalfCheetahPyBulletEnv-v0 exp1 <br/>
+Here the algorithm is Surreal's inbuilt PPO algorithm and environment is pybullet-gym's half-cheetah.<br/>
+
+Output is tensorboard running at http://localhost:6006/  that shows training status.
 
 ## Deliverables:
 (1)Run SURREAL without MuJoCo by providing SURREAL with pybullet-gym support <br />
