@@ -8,7 +8,7 @@ SURREAL provides flexibility to choose environment and supports two environment 
 (1) [Robosuite](https://github.com/StanfordVL/robosuite) <br />
 (2) [OpenAI Gym MuJoCo](https://gym.openai.com/envs/#mujoco)
 
-Both these environment suites use [MuJoCo](http://www.mujoco.org/) at backend as its physics engine which requires a paid licence. This project incorporates a new environment suite [pybullet-gym](https://github.com/benelot/pybullet-gym) which is an open source implementation of OpenAI Gym MuJoCo environment. 
+Both these environment suites use [MuJoCo](http://www.mujoco.org/) as its physics engine which requires a paid licence. This project incorporates a new environment suite [pybullet-gym](https://github.com/benelot/pybullet-gym) which is an open source implementation of OpenAI Gym MuJoCo environment. 
 
 ### Input and Output
 Input is RL algorithm and environment that the user wants to train on.
