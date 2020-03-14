@@ -22,6 +22,18 @@ Output is tensorboard running at http://localhost:6006/  that shows training sta
 (2)Docker image <br />
 (3)Docker File
 
+## Surreal CLI with PyBullet-Gym environments
+
+surreal_subproc.py [-h] [-al ALGORITHM] [-na NUM_AGENTS][-ne NUM_EVALS] [--env ENV]  [-dr] Experiment_name <br/>
+
+-al : Algorithm - ddpg / ppo or the location of algorithm python script <br/>
+-na : Num_Agents number of agent pods to run in parallel.<br/>
+-ne : Num_evals number of eval pods (rewards evaluators) to run in parallel.<br/>
+--env : Environment, the supported environments (https://github.com/benelot/pybullet-gym#state-of-implementations) have a prefix of "gym:". Example: gym:HalfCheetahPyBulletEnv-v0.
+-dr: Dry run print the subprocess commands without actually running. <br/>
+Experiment_name: experiment name under which checkpoint will be saved
+
+
 ## Run Surreal with PyBullet-Gym
 
 ### Option1: Run from code
