@@ -45,7 +45,7 @@ Step 2: Create a virtual environment
 ```
 mkdir venv
 cd venv
-python3 -m venv ../
+python3 -m venv .
 source ./bin/activate
 ```
 Step 3: Go to the local cloned directory 
